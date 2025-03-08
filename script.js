@@ -1,6 +1,15 @@
-// Ensure JavaScript runs only when the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", function () {
-    
+    console.log("JavaScript loaded and executing...");
+
+    // Select the headline element
+    const headlineElement = document.getElementById("headline");
+
+    // Ensure the headline element exists
+    if (!headlineElement) {
+        console.error("Error: 'headline' element not found in HTML.");
+        return;
+    }
+
     // Array of Scottish football clubs
     const clubs = [
         "Celtic", "Rangers", "Aberdeen", "Hearts", "Hibs", "Dundee United", "Motherwell", 
@@ -46,15 +55,9 @@ document.addEventListener("DOMContentLoaded", function () {
         const headline = headlines[Math.floor(Math.random() * headlines.length)];
         const ending = endings[Math.floor(Math.random() * endings.length)];
 
-        // Ensure the headline is set in the page
-        const headlineElement = document.getElementById("headline");
-        if (headlineElement) {
-            headlineElement.innerText = `${club} ${headline} ${ending}`;
-        } else {
-            console.error("Headline element not found.");
-        }
+        headlineElement.innerText = `${club} ${headline} ${ending}`;
     }
 
-    // Generate a headline when the page loads
+    // Generate and insert headline immediately on page load
     generateHeadline();
 });
