@@ -100,8 +100,7 @@ const endings = [
     "LEAVING LONG-TERM SPONSORS ‘DEEPLY CONCERNED’",
     "WITH FURTHER REVELATIONS EXPECTED IN THE COMING DAYS"
 ];
-
-// Function to generate a random headline
+// Function to generate a random headline on page load
 function generateHeadline() {
     const club = clubs[Math.floor(Math.random() * clubs.length)];
     const headline = headlines[Math.floor(Math.random() * headlines.length)];
@@ -109,9 +108,6 @@ function generateHeadline() {
 
     document.getElementById("headline").innerText = `${club} ${headline} ${ending}`;
 }
-
-// Add event listener for button click
-document.getElementById("generateButton").addEventListener("click", generateHeadline);
 
 // Generate a headline when the page loads
 window.onload = generateHeadline;
