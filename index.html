@@ -3,25 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Scottish Football Tabloid Generator</title>
+    <title>The Football Scoop - Scottish Football Headlines</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Newspaper Title and Subtitle -->
-    <div class="masthead">
-        <div class="newspaper-title">THE BRIGADOON COURIER</div>
-        <div class="newspaper-subtitle">OUR FOOTBALL NEWS IS AS REAL AS WE ARE!</div>
-    </div>
+
+    <!-- Large Masthead -->
+    <header class="masthead">
+        <div class="container">
+            <div class="newspaper-title">THE FOOTBALL SCOOP</div>
+            <div class="newspaper-subtitle">SCOTLAND'S NO.1 SOURCE FOR FOOTBALL DRAMA & CONTROVERSY</div>
+        </div>
+    </header>
 
     <!-- Breaking News Banner -->
-    <span class="breaking-news">Breaking: Shocking New Development!</span>
+    <div class="breaking-news">BREAKING: Shocking New Development in Scottish Football</div>
 
     <!-- Main Content -->
-    <div class="container">
-        <h1>Exclusive:</h1>
-        <p id="headline">Click the button to generate a headline!</p>
+    <main class="content">
+        <div class="headline-container">
+            <h1 id="headline">Click the button to generate a headline!</h1>
+        </div>
         <button onclick="generateHeadline()">Generate Headline</button>
-    </div>
+    </main>
 
     <script src="script.js"></script>
 </body>
