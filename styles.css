@@ -1,36 +1,41 @@
-/* General Page Styling */
-body {
-    font-family: 'Arial Black', 'Arial', sans-serif;
-    text-align: center;
+/* Reset Styles */
+* {
     margin: 0;
     padding: 0;
-    background-color: #f2f2f2;
+    box-sizing: border-box;
 }
 
-/* Masthead (Newspaper Title & Subtitle) */
+/* General Page Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+/* Large Fixed Masthead */
 .masthead {
     background-color: red;
     color: white;
-    padding: 20px;
-    border-bottom: 8px solid black;
+    padding: 25px 0;
+    text-align: center;
+    border-bottom: 5px solid black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.newspaper-title {
+    font-size: 50px;
+    font-weight: bold;
+    letter-spacing: 2px;
     text-transform: uppercase;
 }
 
-/* Newspaper Title */
-.newspaper-title {
-    font-size: 60px;
-    font-weight: bold;
-    letter-spacing: 2px;
-    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-}
-
-/* Newspaper Subtitle */
 .newspaper-subtitle {
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
-    letter-spacing: 1px;
     margin-top: 5px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 /* Breaking News Banner */
@@ -39,36 +44,41 @@ body {
     color: black;
     font-weight: bold;
     font-size: 22px;
-    padding: 10px;
+    padding: 12px;
     text-transform: uppercase;
-    border-bottom: 3px solid red;
     width: 100%;
     display: block;
+    margin-top: 100px; /* Adjusted for fixed masthead */
+    border-bottom: 4px solid red;
 }
 
-/* Main Container */
-.container {
+/* Main Content */
+.content {
+    margin-top: 50px;
+    padding: 30px 15px;
+}
+
+/* Headline Container */
+.headline-container {
     background: white;
     padding: 30px;
-    margin: 40px auto;
+    margin: 30px auto;
     border: 5px solid black;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
-    max-width: 650px;
+    max-width: 750px;
     text-align: center;
 }
 
-/* Tabloid-Style Headline */
+/* Sensationalist Headline Style */
 #headline {
     font-size: 36px;
     font-weight: bold;
     text-transform: uppercase;
     color: white;
     background: black;
-    padding: 20px;
-    margin: 20px 0;
+    padding: 25px;
     border-left: 15px solid red;
     border-right: 15px solid red;
-    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.6);
     line-height: 1.4;
 }
 
@@ -79,11 +89,11 @@ button {
     font-weight: bold;
     background-color: red;
     color: white;
-    border: 3px solid black;
+    border: none;
     cursor: pointer;
     text-transform: uppercase;
     border-radius: 5px;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+    margin-top: 20px;
     transition: background 0.3s ease, transform 0.1s ease-in-out;
 }
 
