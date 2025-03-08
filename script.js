@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Select the headline element
     const headlineElement = document.getElementById("headline");
+    const generateButton = document.getElementById("generateHeadlineBtn");
 
     // Ensure the headline element exists
     if (!headlineElement) {
@@ -192,4 +193,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Generate and insert headline immediately on page load
     generateHeadline();
+
+    // Add event listener to button to generate a new headline when clicked
+    generateButton.addEventListener("click", generateHeadline);
 });
