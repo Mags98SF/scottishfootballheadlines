@@ -99,6 +99,7 @@ const endings = [
     "AS TV PUNDIT CALLS IT ‘A NATIONAL EMBARRASSMENT’",
     "LEAVING LONG-TERM SPONSORS ‘DEEPLY CONCERNED’",
     "WITH FURTHER REVELATIONS EXPECTED IN THE COMING DAYS"
+];
 
 // Function to generate a random headline
 function generateHeadline() {
