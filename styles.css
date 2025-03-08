@@ -7,17 +7,43 @@ body {
     background-color: #f2f2f2;
 }
 
-/* Newspaper-style Header (Masthead) */
-.header {
+/* Masthead (Newspaper Title & Subtitle) */
+.masthead {
     background-color: red;
     color: white;
     padding: 20px;
-    font-size: 50px;
-    font-weight: bold;
+    border-bottom: 8px solid black;
     text-transform: uppercase;
+}
+
+/* Newspaper Title */
+.newspaper-title {
+    font-size: 60px;
+    font-weight: bold;
     letter-spacing: 2px;
     text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.5);
-    border-bottom: 8px solid black;
+}
+
+/* Newspaper Subtitle */
+.newspaper-subtitle {
+    font-size: 22px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 5px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Breaking News Banner */
+.breaking-news {
+    background-color: yellow;
+    color: black;
+    font-weight: bold;
+    font-size: 22px;
+    padding: 10px;
+    text-transform: uppercase;
+    border-bottom: 3px solid red;
+    width: 100%;
+    display: block;
 }
 
 /* Main Container */
@@ -64,17 +90,4 @@ button {
 button:hover {
     background-color: darkred;
     transform: scale(1.05);
-}
-
-/* Fake ‘Breaking News’ Banner for Authenticity */
-.breaking-news {
-    background-color: yellow;
-    color: black;
-    font-weight: bold;
-    font-size: 22px;
-    padding: 10px;
-    text-transform: uppercase;
-    border-bottom: 3px solid red;
-    width: 100%;
-    display: block;
 }
