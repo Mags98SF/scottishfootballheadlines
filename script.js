@@ -1,4 +1,6 @@
+// Ensure JavaScript runs only when the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", function () {
+    
     // Array of Scottish football clubs
     const clubs = [
         "Celtic", "Rangers", "Aberdeen", "Hearts", "Hibs", "Dundee United", "Motherwell", 
@@ -44,9 +46,15 @@ document.addEventListener("DOMContentLoaded", function () {
         const headline = headlines[Math.floor(Math.random() * headlines.length)];
         const ending = endings[Math.floor(Math.random() * endings.length)];
 
-        document.getElementById("headline").innerText = `${club} ${headline} ${ending}`;
+        // Ensure the headline is set in the page
+        const headlineElement = document.getElementById("headline");
+        if (headlineElement) {
+            headlineElement.innerText = `${club} ${headline} ${ending}`;
+        } else {
+            console.error("Headline element not found.");
+        }
     }
 
-    // Ensure the headline loads immediately on refresh
+    // Generate a headline when the page loads
     generateHeadline();
 });
