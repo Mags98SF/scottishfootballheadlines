@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "CONFIRMS NEW STRIKER – HASN’T SCORED A GOAL SINCE 2016",
         "BOSS EXPLAINS RECENT LOSING STREAK – CLAIMS ‘WE’RE JUST UNLUCKY, EVERY WEEK’",
         "MASCOT CONTROVERSY AFTER NEW DESIGN IS ‘TOO TERRIFYING FOR CHILDREN’",
-    ];
+        ];
 
     // Array of dramatic endings
     const endings = [
