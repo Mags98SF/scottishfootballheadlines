@@ -12,12 +12,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Array of Scottish football clubs
     const clubs = [
-     "Celtic", "Rangers", "Aberdeen", "Hearts", "Hibs", "Dundee United", "Motherwell", "Livingston", "Kilmarnock", "Ross County", "St Mirren", "St Johnstone",
-     "Dunfermline Athletic", "Ayr United", "Falkirk", "Queen’s Park", "Partick Thistle", "Greenock Morton", "Inverness Caledonian Thistle", "Raith Rovers", "Hamilton Accies", "Dundee", "Arbroath",
-     "Clyde", "Queen of the South", "Montrose", "Forfar Athletic", "East Fife", "Airdrieonians", "Alloa Athletic", "Edinburgh City", "Kelty Hearts", "Stirling Albion",
-     "Elgin City", "Annan Athletic", "Stranraer", "Albion Rovers", "Peterhead", "Brechin City", "Cowdenbeath", "Cove Rangers", "Gala Fairydean Rovers", "Spartans",
-     "Brora Rangers", "Buckie Thistle", "Clachnacuddin", "Deveronvale", "Formartine United", "Forres Mechanics", "Fraserburgh", "Huntly", "Inverurie Loco Works", "Keith", "Lossiemouth", "Nairn County", "Rothes", "Strathspey Thistle", "Turriff United",
-     "Berwick Rangers", "Bonnyrigg Rose", "Broomhill", "Caledonian Braves", "Celtic B", "Civil Service Strollers", "Cowdenbeath", "Cumbernauld Colts", "Dalbeattie Star", "East Kilbride","Edinburgh University", "Gretna 2008", "Hearts B", "University of Stirling", "Rangers B"
+         "Celtic", "Rangers", "Aberdeen", "Hearts", "Hibs", "Dundee United", "Motherwell", "Livingston", "Kilmarnock", "Ross County", "St Mirren", "St Johnstone",
+         "Dunfermline Athletic", "Ayr United", "Falkirk", "Queen’s Park", "Partick Thistle", "Greenock Morton", "Inverness Caledonian Thistle", "Raith Rovers", "Hamilton Accies", "Dundee", "Arbroath",
+         "Clyde", "Queen of the South", "Montrose", "Forfar Athletic", "East Fife", "Airdrieonians", "Alloa Athletic", "Edinburgh City", "Kelty Hearts", "Stirling Albion",
+         "Elgin City", "Annan Athletic", "Stranraer", "Albion Rovers", "Peterhead", "Brechin City", "Cowdenbeath", "Cove Rangers", "Gala Fairydean Rovers", "Spartans",
+         "Brora Rangers", "Buckie Thistle", "Clachnacuddin", "Deveronvale", "Formartine United", "Forres Mechanics", "Fraserburgh", "Huntly", "Inverurie Loco Works", "Keith", "Lossiemouth", "Nairn County", "Rothes", "Strathspey Thistle", "Turriff United",
+         "Berwick Rangers", "Bonnyrigg Rose", "Broomhill", "Caledonian Braves", "Celtic B", "Civil Service Strollers", "Cowdenbeath", "Cumbernauld Colts", "Dalbeattie Star", "East Kilbride","Edinburgh University", "Gretna 2008", "Hearts B", "University of Stirling", "Rangers B",
     ];
 
     // Array of Red Top style headlines
@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
         "CONFIRMS NEW STRIKER – HASN’T SCORED A GOAL SINCE 2016",
         "BOSS EXPLAINS RECENT LOSING STREAK – CLAIMS ‘WE’RE JUST UNLUCKY, EVERY WEEK’",
         "MASCOT CONTROVERSY AFTER NEW DESIGN IS ‘TOO TERRIFYING FOR CHILDREN’",
-        ];
+    ];
 
     // Array of dramatic endings
     const endings = [
