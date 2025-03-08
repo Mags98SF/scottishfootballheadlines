@@ -1,9 +1,7 @@
 // Arrays of Scottish football-related terms
 const subjects = [
-    "Celtic", "Rangers", "Aberdeen", "Hearts", "Hibs", "Dundee United", "Motherwell", "Livingston",
-    "Kilmarnock", "Ross County", "St Mirren", "St Johnstone",
-    "Steve Clarke", "Callum McGregor", "James Tavernier", "Lawrence Shankland",
-    "John Beaton (Referee)", "VAR Officials", "Scottish FA", "SPFL Board"
+    "CELTIC", "RANGERS", "ABERDEEN", "HEARTS", "HIBS", "DUNDEE", "DUNDEE UNITED", "MOTHERWELL", "LIVINGSTON",
+    "KILMARNOCK", "ROSS COUNTY", "ST MIRREN", "ST JOHNSTONE"
 ];
 
 const headlines = [
