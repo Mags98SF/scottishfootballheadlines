@@ -16,7 +16,7 @@ body {
 .masthead {
     background-color: red;
     color: white;
-    padding: 25px 0;
+    padding: 20px 10px;
     text-align: center;
     border-bottom: 5px solid black;
     width: 100%;
@@ -26,14 +26,16 @@ body {
 }
 
 .newspaper-title {
-    font-size: 50px;
+    font-size: 3rem; /* Adjusts size for mobile screens */
     font-weight: bold;
     letter-spacing: 2px;
     text-transform: uppercase;
+    max-width: 100%;
+    overflow-wrap: break-word;
 }
 
 .newspaper-subtitle {
-    font-size: 18px;
+    font-size: 1rem;
     font-weight: bold;
     margin-top: 5px;
 }
@@ -43,12 +45,12 @@ body {
     background-color: yellow;
     color: black;
     font-weight: bold;
-    font-size: 22px;
+    font-size: 1.5rem;
     padding: 12px;
     text-transform: uppercase;
     width: 100%;
     display: block;
-    margin-top: 100px; /* Adjusted for fixed masthead */
+    margin-top: 90px; /* Adjusted for fixed masthead */
     border-bottom: 4px solid red;
 }
 
@@ -66,28 +68,31 @@ body {
     border: 5px solid black;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.4);
     max-width: 750px;
+    width: 90%;
     text-align: center;
 }
 
 /* Sensationalist Headline Style */
 #headline {
-    font-size: 36px;
+    font-size: 2rem; /* Scales properly on mobile */
     font-weight: bold;
     text-transform: uppercase;
     color: white;
     background: black;
-    padding: 25px;
-    border-left: 15px solid red;
-    border-right: 15px solid red;
+    padding: 20px;
+    border-left: 10px solid red;
+    border-right: 10px solid red;
     line-height: 1.4;
+    max-width: 100%;
+    word-wrap: break-word;
 }
 
 /* Generate New Headline Button */
 #generateHeadlineBtn {
     display: block;
     margin: 20px auto;
-    padding: 12px 20px;
-    font-size: 18px;
+    padding: 15px 20px;
+    font-size: 1.2rem;
     font-weight: bold;
     background-color: red;
     color: white;
@@ -97,6 +102,7 @@ body {
     text-transform: uppercase;
     transition: background-color 0.2s, transform 0.1s;
     box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.3);
+    max-width: 90%;
 }
 
 #generateHeadlineBtn:hover {
@@ -106,4 +112,75 @@ body {
 
 #generateHeadlineBtn:active {
     transform: scale(0.95);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .masthead {
+        padding: 15px;
+    }
+
+    .newspaper-title {
+        font-size: 2.2rem;
+    }
+
+    .newspaper-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .breaking-news {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+
+    .content {
+        padding: 20px;
+    }
+
+    #headline {
+        font-size: 1.8rem;
+        padding: 15px;
+    }
+
+    #generateHeadlineBtn {
+        font-size: 1rem;
+        padding: 12px;
+    }
+}
+
+@media (max-width: 480px) {
+    .masthead {
+        padding: 10px;
+    }
+
+    .newspaper-title {
+        font-size: 1.8rem;
+    }
+
+    .newspaper-subtitle {
+        font-size: 0.8rem;
+    }
+
+    .breaking-news {
+        font-size: 1rem;
+        padding: 8px;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    .headline-container {
+        padding: 20px;
+    }
+
+    #headline {
+        font-size: 1.5rem;
+        padding: 12px;
+    }
+
+    #generateHeadlineBtn {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
 }
